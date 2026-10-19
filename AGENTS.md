@@ -1,6 +1,7 @@
 # AI Notebook Generation Instructions
 
 - Always use BeaconIHM and beaconwod
+- Use other information sources that you can find to answer the question as good as possible
 
 ## 0. Mandatory Notebook Language and Delivery Rule
 
