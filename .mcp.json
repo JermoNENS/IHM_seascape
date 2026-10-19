@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"SeaScape": {
+			"url": "https://beacon-ihm.maris.nl/mcp",
+			"type": "http"
+		}
+	}
+}
