@@ -1,5 +1,21 @@
 # AI Notebook Generation Instructions
 
+- Always use BeaconIHM and beaconwod
+
+## 0. Mandatory Notebook Language and Delivery Rule
+
+- **Always deliver a Jupyter notebook (`.ipynb`) for every user question or request that is handled using the configured MCP tools**, regardless of whether the user asks the question in English or Dutch.
+- **The notebook's human-readable content must always be in Dutch by default.** This includes the title, overview, section headings, explanations, tables, chart titles and labels, interpretation, findings, limitations, and conclusions.
+- The language used by the user does not determine the notebook language. Questions may be written in English or Dutch; the notebook must still be written in Dutch.
+- Only use another language for the notebook when the user **explicitly asks for a different notebook language**. A question written in English is not, by itself, a request for an English notebook.
+- Keep code, tool names, API identifiers, and source/table/column names unchanged where necessary for correctness. Explain their meaning in Dutch.
+- Answer the user's question in the notebook, grounding the answer in data actually retrieved or verified through the MCP tools. Include relevant evidence, source information, calculations, and visualizations where useful.
+- If the MCP cannot verify the answer or required data is unavailable, still deliver a Dutch notebook documenting what was checked, what could and could not be established, and why. Never invent data, sources, calculations, or results.
+- Provide the actual `.ipynb` file as the deliverable, not only notebook code or a prose answer in chat. If creating or attaching a notebook is not possible in the environment, state that limitation clearly and provide the closest usable alternative.
+- Preserve the mandatory notebook structure and quality, data-source, validation, and transparency requirements below. For simple questions, keep the notebook proportionate while retaining the sections required by these instructions.
+
+---
+
 ## 1. Purpose and General Principles
 
 Generate clear, well-documented Jupyter notebooks using the available MCP tools to access approved data sources in the data lake.
@@ -8,8 +24,8 @@ The primary audience consists of business users who may not have a technical or 
 
 Follow these principles throughout every notebook:
 
-- Use plain English and avoid unnecessary technical terminology.
-- Explain technical concepts in business-friendly language whenever they are relevant.
+- Use clear, accessible Dutch and avoid unnecessary technical terminology.
+- Explain technical concepts in accessible Dutch for business users whenever relevant.
 - Clearly distinguish facts obtained from the data from assumptions, estimates, and interpretations.
 - Never invent data sources, columns, values, results, or analytical methods.
 - Explain the purpose and meaning of each major analytical step before presenting its code or results.
@@ -242,7 +258,7 @@ Perform the requested analysis using the discovered and prepared data.
 Requirements:
 
 - Organize the analysis into logical subsections.
-- Introduce each major calculation or comparison with a plain-English explanation.
+- Introduce each major calculation or comparison with a clear Dutch explanation.
 - Use descriptive names for measures and outputs.
 - Explain important results immediately after presenting them.
 - Distinguish observed results from interpretations or hypotheses.
@@ -340,16 +356,16 @@ Never describe an unexecuted notebook as fully validated.
 
 These rules apply to every Markdown cell, table, chart explanation, and conclusion.
 
-- Write for business users rather than software developers or data scientists.
+- Write in accessible Dutch for business users rather than only for software developers or data scientists.
 - Use short paragraphs with clear headings.
-- Prefer familiar words over technical jargon.
-- Explain unavoidable technical terms when they first appear.
+- Prefer familiar Dutch words over technical jargon.
+- Explain unavoidable technical terms in Dutch when they first appear.
 - Explain why a step matters, not just what code it runs.
-- Keep explanations informative but concise.
+- Keep Dutch explanations informative but concise.
 - Avoid repeating the same explanation across multiple sections.
 - Use tables when they make source descriptions, assumptions, or findings easier to compare.
 - Place detailed implementation information in code comments only when needed; keep the main narrative accessible.
-- Never make the reader infer where the data came from, what was changed, or what a chart means.
+- Never make the reader infer where the data came from, what was changed, or what a chart means; explain this in Dutch.
 
 ## 4. Notebook Generation and MCP Rules
 
