@@ -59,6 +59,7 @@ Purpose: generate clear, well-documented Jupyter notebooks that answer the user'
 
 ### B.1 Sources
 - Always use BeaconIHM. Optionally look at beaconwod and beaconargo when environmental data is relevant to the question (e.g. water quality, temperature, salinity, tides, weather), starting with WADAR and RWS_CTD.
+- When questions are asked about medegebruik windmolenpark, use the instructions in Medegebruik_windmolens.md
 - Other information sources (public datasets, APIs, documents) are allowed when they help answer the question better. They must be disclosed in notebook section 2.2 with source, date and limitations, and kept clearly separate from data lake data.
 
 ### B.2 Delivery
