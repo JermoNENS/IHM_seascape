@@ -13,6 +13,7 @@ Never apply Workflow A or B to a request that does not match its trigger.
 
 ### MCP and data sources (apply to all workflows)
 - Use the BeaconIHM, beaconwod and beaconargo nodes. Never use Beacon-Global or other running MCP servers unless the user specifically requests it.
+- Have a look at the Beacon API description: https://pypi.org/project/beacon-api/
 - For environmental data, look first at the beaconwod, beaconargo, WADAR and RWS_CTD tables. Consider other tables with environmental content only afterwards.
 - Use MCP to discover sources and inspect metadata. Never invent source names, schemas, tables, columns, parameters, values, units or tool capabilities.
 - Use only authorized sources and operations. Retrieve only the data needed.
