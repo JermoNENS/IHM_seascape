@@ -60,11 +60,11 @@ Purpose: generate clear, well-documented Jupyter notebooks that answer the user'
 
 ### B.1 Sources
 - Always use BeaconIHM. Optionally look at beaconwod and beaconargo when environmental data is relevant to the question (e.g. water quality, temperature, salinity, tides, weather), starting with WADAR and RWS_CTD.
-- When questions are asked about medegebruik windmolenpark, use the instructions in Medegebruik_windmolens.md
+- When questions are asked about medegebruik windmolenpark, use the reference material in `references/medegebruik/Medegebruik_windmolens.md`.
 - Other information sources (public datasets, APIs, documents) are allowed when they help answer the question better. They must be disclosed in notebook section 2.2 with source, date and limitations, and kept clearly separate from data lake data.
 
 ### B.2 Delivery
-- Deliver the actual `.ipynb` file, not only notebook code or a chat answer. If creating or attaching a notebook is not possible, state that limitation clearly and provide the closest usable alternative.
+- Save every generated `.ipynb` notebook in `notebooks/`. Deliver the actual notebook file, not only notebook code or a chat answer. If creating or attaching a notebook is not possible, state that limitation clearly and provide the closest usable alternative.
 - Answer the user's question in the notebook, grounded in data actually retrieved or verified through MCP. If the data is unavailable or cannot be verified, still deliver a Dutch notebook that documents what was checked, what could and could not be established, and why. Never invent data, sources, calculations or results.
 - **Data in the notebook.** The agent retrieves the data via MCP, saves the extract as data file(s) delivered together with the notebook, and the notebook loads from those files. Document in section 2.3 which MCP tool and query/filter were used and when the extract was made, so that the extract can be reproduced. If the notebook environment can call the MCP data source directly, that is allowed, but the extract must still be documented.
 - **Execution.** Where possible, execute the notebook and deliver it with saved outputs. Report honestly whether it was executed successfully, partially executed, or only structurally reviewed (see section 10). Never describe an unexecuted notebook as fully validated.
